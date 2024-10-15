@@ -1,0 +1,26 @@
+## Idee
+event manager app voor films specifiek
+
+Gebruikers kunnen:
+- account beheren
+- andere gebruikers volgen/bevrienden
+- events posten voor een zelf georganiseerde filmavond
+
+## Mogelijke uitbreidingen
+- notificaties voor films in cinema
+- dating app achtige swipe dinges erbij
+
+## Frameworks en Tools
+- React Bootstrap
+- node.js
+- MySQL?
+- GitHub
+
+## Stappenplan voor volgende meeting
+
+| Task                 | Verantwoordelijken    |
+| -------------------- | --------------------- |
+| Github repo aanmaken | Maurice               |
+| Database opstellen   | Rune                  |
+| accounts aanmaken    | Arnaud, Maurice       |
+| Figma mockup         | Aise, Arnaud, Maurice |
