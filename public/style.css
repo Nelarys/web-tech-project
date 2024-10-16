@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  #movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .movie-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    background-color: #ddd;
+    max-width: 300px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  #title {
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+  }
+  
