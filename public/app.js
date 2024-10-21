@@ -1,7 +1,7 @@
 const API_KEY = 'cbbc13791a3d488b4bc79a4c473a5fa2';
 const BASE_URL = 'https://api.themoviedb.org/3';
 
-const ratedMovies = new Array(); //Has to be changed to a database, but this is just for testing
+const ratedMovies = new Array();
 
 const counter = 0;
 
@@ -77,3 +77,7 @@ async function getMovie() {
 }
 
 getMovie();
+
+function save_current_movie(){
+  
+}
