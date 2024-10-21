@@ -17,9 +17,9 @@ IF EXIST %INSTALLER_PATH% (
     exit /b 1
 )
 
-REM Step 2: Install MySQL silently
-echo Installing MySQL silently...
-msiexec /i %INSTALLER_PATH% /quiet
+REM Step 2: Install MySQL
+echo Installing MySQL...
+msiexec /i %INSTALLER_PATH% 
 
 REM Step 3: Check if MySQL is installed
 REM You can customize this part to check the MySQL installation more thoroughly
