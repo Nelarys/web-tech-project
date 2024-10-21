@@ -46,42 +46,4 @@ main_macos() {
     secure_mysql
 }
 
-install_mysql_win() {
-    echo "Updating package list..."
-    sudo apt update
-
-    echo "Installing MySQL server..."
-    sudo apt install -y mysql-server
-
-    echo "MySQL installation completed."
-}
-
-start_mysql_win() {
-    echo "Starting MySQL service..."
-    sudo service mysql start
-}
-
-secure_mysql_win() {
-    echo "Running MySQL secure installation..."
-    sudo mysql_secure_installation
-}
-
-main_win() {
-    if dpkg-query -l | grep -q mysql-server; then
-        echo "MySQL is already installed."
-    else
-        install_mysql_win
-    fi
-
-    start_mysql_win
-
-    echo "MySQL has been installed and started successfully."
-    echo "You can run 'sudo mysql -u root' to log into the MySQL server."
-
-    secure_mysql_win
-}
-
-if [["$OSTYPE" == "darwin"]]; then #user uses macos
-    main-macos 
-else #user uses windows (expecting nobody to use linux)
-    main_win
+main_macos
